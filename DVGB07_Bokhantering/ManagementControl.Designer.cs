@@ -36,6 +36,8 @@ namespace DVGB07_Bokhantering
 			this.addButton = new System.Windows.Forms.Button();
 			this.removeButton = new System.Windows.Forms.Button();
 			this.bookDataGridView = new System.Windows.Forms.DataGridView();
+			this.cancelButton = new System.Windows.Forms.Button();
+			this.saveButton = new System.Windows.Forms.Button();
 			this.descriptionTextBox = new System.Windows.Forms.TextBox();
 			this.isbnTextBox = new System.Windows.Forms.TextBox();
 			this.authorTextBox = new System.Windows.Forms.TextBox();
@@ -69,6 +71,8 @@ namespace DVGB07_Bokhantering
 			// 
 			// mainSplitContainer.Panel2
 			// 
+			this.mainSplitContainer.Panel2.Controls.Add(this.cancelButton);
+			this.mainSplitContainer.Panel2.Controls.Add(this.saveButton);
 			this.mainSplitContainer.Panel2.Controls.Add(this.descriptionTextBox);
 			this.mainSplitContainer.Panel2.Controls.Add(this.isbnTextBox);
 			this.mainSplitContainer.Panel2.Controls.Add(this.authorTextBox);
@@ -108,6 +112,7 @@ namespace DVGB07_Bokhantering
 			this.addButton.TabIndex = 0;
 			this.addButton.Text = "Add Book";
 			this.addButton.UseVisualStyleBackColor = true;
+			this.addButton.Click += new System.EventHandler(this.addButton_Click);
 			// 
 			// removeButton
 			// 
@@ -118,15 +123,50 @@ namespace DVGB07_Bokhantering
 			this.removeButton.TabIndex = 0;
 			this.removeButton.Text = "Remove Book";
 			this.removeButton.UseVisualStyleBackColor = true;
+			this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
 			// 
 			// bookDataGridView
 			// 
+			this.bookDataGridView.AllowUserToAddRows = false;
+			this.bookDataGridView.AllowUserToDeleteRows = false;
 			this.bookDataGridView.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
 			this.bookDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
 			this.bookDataGridView.Location = new System.Drawing.Point(3, 3);
+			this.bookDataGridView.MultiSelect = false;
 			this.bookDataGridView.Name = "bookDataGridView";
+			this.bookDataGridView.ReadOnly = true;
+			this.bookDataGridView.SelectionMode = System.Windows.Forms.DataGridViewSelectionMode.FullRowSelect;
+			this.bookDataGridView.ShowCellErrors = false;
+			this.bookDataGridView.ShowCellToolTips = false;
+			this.bookDataGridView.ShowEditingIcon = false;
+			this.bookDataGridView.ShowRowErrors = false;
 			this.bookDataGridView.Size = new System.Drawing.Size(369, 352);
 			this.bookDataGridView.TabIndex = 0;
+			this.bookDataGridView.SelectionChanged += new System.EventHandler(this.bookDataGridView_SelectionChanged);
+			// 
+			// cancelButton
+			// 
+			this.cancelButton.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.cancelButton.Enabled = false;
+			this.cancelButton.Location = new System.Drawing.Point(87, 358);
+			this.cancelButton.Name = "cancelButton";
+			this.cancelButton.Size = new System.Drawing.Size(75, 56);
+			this.cancelButton.TabIndex = 2;
+			this.cancelButton.Text = "Cancel";
+			this.cancelButton.UseVisualStyleBackColor = true;
+			this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
+			// 
+			// saveButton
+			// 
+			this.saveButton.Anchor = ((System.Windows.Forms.AnchorStyles) ((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
+			this.saveButton.Enabled = false;
+			this.saveButton.Location = new System.Drawing.Point(168, 358);
+			this.saveButton.Name = "saveButton";
+			this.saveButton.Size = new System.Drawing.Size(75, 56);
+			this.saveButton.TabIndex = 2;
+			this.saveButton.Text = "Save";
+			this.saveButton.UseVisualStyleBackColor = true;
+			this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
 			// 
 			// descriptionTextBox
 			// 
@@ -136,6 +176,7 @@ namespace DVGB07_Bokhantering
 			this.descriptionTextBox.Name = "descriptionTextBox";
 			this.descriptionTextBox.Size = new System.Drawing.Size(231, 248);
 			this.descriptionTextBox.TabIndex = 1;
+			this.descriptionTextBox.TextChanged += new System.EventHandler(this.descriptionTextBox_TextChanged);
 			// 
 			// isbnTextBox
 			// 
@@ -144,6 +185,7 @@ namespace DVGB07_Bokhantering
 			this.isbnTextBox.Name = "isbnTextBox";
 			this.isbnTextBox.Size = new System.Drawing.Size(125, 20);
 			this.isbnTextBox.TabIndex = 1;
+			this.isbnTextBox.TextChanged += new System.EventHandler(this.isbnTextBox_TextChanged);
 			// 
 			// authorTextBox
 			// 
@@ -152,6 +194,7 @@ namespace DVGB07_Bokhantering
 			this.authorTextBox.Name = "authorTextBox";
 			this.authorTextBox.Size = new System.Drawing.Size(125, 20);
 			this.authorTextBox.TabIndex = 1;
+			this.authorTextBox.TextChanged += new System.EventHandler(this.authorTextBox_TextChanged);
 			// 
 			// titleTextBox
 			// 
@@ -160,6 +203,7 @@ namespace DVGB07_Bokhantering
 			this.titleTextBox.Name = "titleTextBox";
 			this.titleTextBox.Size = new System.Drawing.Size(125, 20);
 			this.titleTextBox.TabIndex = 1;
+			this.titleTextBox.TextChanged += new System.EventHandler(this.titleTextBox_TextChanged);
 			// 
 			// descriptionLabel
 			// 
@@ -218,6 +262,10 @@ namespace DVGB07_Bokhantering
 			((System.ComponentModel.ISupportInitialize) (this.bookDataGridView)).EndInit();
 			this.ResumeLayout(false);
 		}
+
+		private System.Windows.Forms.Button cancelButton;
+
+		private System.Windows.Forms.Button saveButton;
 
 		private System.Windows.Forms.Label authorLabel;
 		private System.Windows.Forms.Label isbnLabel;
