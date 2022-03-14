@@ -4,9 +4,13 @@ namespace DVGB07_Bokhantering
 {
 	public partial class ManagementControl : UserControl
 	{
-		public ManagementControl()
+		private BindingSource bookListSource;
+		
+		public ManagementControl(BindingSource bookListSource)
 		{
 			InitializeComponent();
+			this.bookListSource = bookListSource;
+			bookDataGridView.DataSource = this.bookListSource;
 		}
 
 	}
