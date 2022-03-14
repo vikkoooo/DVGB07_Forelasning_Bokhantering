@@ -109,7 +109,7 @@ namespace DVGB07_Bokhantering
 			this.addButton.Location = new System.Drawing.Point(0, 0);
 			this.addButton.Name = "addButton";
 			this.addButton.Size = new System.Drawing.Size(191, 59);
-			this.addButton.TabIndex = 0;
+			this.addButton.TabIndex = 2;
 			this.addButton.Text = "Add Book";
 			this.addButton.UseVisualStyleBackColor = true;
 			this.addButton.Click += new System.EventHandler(this.addButton_Click);
@@ -120,7 +120,7 @@ namespace DVGB07_Bokhantering
 			this.removeButton.Location = new System.Drawing.Point(0, 0);
 			this.removeButton.Name = "removeButton";
 			this.removeButton.Size = new System.Drawing.Size(174, 59);
-			this.removeButton.TabIndex = 0;
+			this.removeButton.TabIndex = 3;
 			this.removeButton.Text = "Remove Book";
 			this.removeButton.UseVisualStyleBackColor = true;
 			this.removeButton.Click += new System.EventHandler(this.removeButton_Click);
@@ -151,7 +151,7 @@ namespace DVGB07_Bokhantering
 			this.cancelButton.Location = new System.Drawing.Point(87, 358);
 			this.cancelButton.Name = "cancelButton";
 			this.cancelButton.Size = new System.Drawing.Size(75, 56);
-			this.cancelButton.TabIndex = 2;
+			this.cancelButton.TabIndex = 8;
 			this.cancelButton.Text = "Cancel";
 			this.cancelButton.UseVisualStyleBackColor = true;
 			this.cancelButton.Click += new System.EventHandler(this.cancelButton_Click);
@@ -163,7 +163,7 @@ namespace DVGB07_Bokhantering
 			this.saveButton.Location = new System.Drawing.Point(168, 358);
 			this.saveButton.Name = "saveButton";
 			this.saveButton.Size = new System.Drawing.Size(75, 56);
-			this.saveButton.TabIndex = 2;
+			this.saveButton.TabIndex = 9;
 			this.saveButton.Text = "Save";
 			this.saveButton.UseVisualStyleBackColor = true;
 			this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
@@ -175,7 +175,7 @@ namespace DVGB07_Bokhantering
 			this.descriptionTextBox.Multiline = true;
 			this.descriptionTextBox.Name = "descriptionTextBox";
 			this.descriptionTextBox.Size = new System.Drawing.Size(231, 248);
-			this.descriptionTextBox.TabIndex = 1;
+			this.descriptionTextBox.TabIndex = 7;
 			this.descriptionTextBox.TextChanged += new System.EventHandler(this.descriptionTextBox_TextChanged);
 			// 
 			// isbnTextBox
@@ -184,7 +184,7 @@ namespace DVGB07_Bokhantering
 			this.isbnTextBox.Location = new System.Drawing.Point(118, 57);
 			this.isbnTextBox.Name = "isbnTextBox";
 			this.isbnTextBox.Size = new System.Drawing.Size(125, 20);
-			this.isbnTextBox.TabIndex = 1;
+			this.isbnTextBox.TabIndex = 6;
 			this.isbnTextBox.TextChanged += new System.EventHandler(this.isbnTextBox_TextChanged);
 			// 
 			// authorTextBox
@@ -193,7 +193,7 @@ namespace DVGB07_Bokhantering
 			this.authorTextBox.Location = new System.Drawing.Point(118, 34);
 			this.authorTextBox.Name = "authorTextBox";
 			this.authorTextBox.Size = new System.Drawing.Size(125, 20);
-			this.authorTextBox.TabIndex = 1;
+			this.authorTextBox.TabIndex = 5;
 			this.authorTextBox.TextChanged += new System.EventHandler(this.authorTextBox_TextChanged);
 			// 
 			// titleTextBox
@@ -202,7 +202,7 @@ namespace DVGB07_Bokhantering
 			this.titleTextBox.Location = new System.Drawing.Point(118, 11);
 			this.titleTextBox.Name = "titleTextBox";
 			this.titleTextBox.Size = new System.Drawing.Size(125, 20);
-			this.titleTextBox.TabIndex = 1;
+			this.titleTextBox.TabIndex = 4;
 			this.titleTextBox.TextChanged += new System.EventHandler(this.titleTextBox_TextChanged);
 			// 
 			// descriptionLabel

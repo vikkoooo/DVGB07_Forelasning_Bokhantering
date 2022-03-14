@@ -1,4 +1,5 @@
 ﻿using System;
+using System.ComponentModel;
 using System.Windows.Forms;
 
 namespace DVGB07_Bokhantering
@@ -115,9 +116,17 @@ namespace DVGB07_Bokhantering
 
 		private void addButton_Click(object sender, EventArgs e)
 		{
-			
-			
-			
+			AddBookForm addBookForm = new AddBookForm();
+			addBookForm.StartPosition = FormStartPosition.CenterParent;
+
+			if (addBookForm.ShowDialog() == DialogResult.OK)
+			{
+				bookListSource.Add(addBookForm.Book);
+			}
+			else
+			{
+				return;
+			}
 			
 		}
 	}
