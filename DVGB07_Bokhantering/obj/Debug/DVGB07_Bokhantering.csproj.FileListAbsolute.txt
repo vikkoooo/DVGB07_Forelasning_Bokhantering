@@ -1,0 +1,12 @@
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\bin\Debug\DVGB07_Bokhantering.exe.config
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\bin\Debug\DVGB07_Bokhantering.exe
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\bin\Debug\DVGB07_Bokhantering.pdb
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.csproj.AssemblyReference.cache
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.csproj.SuggestedBindingRedirects.cache
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.Properties.Resources.resources
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.csproj.GenerateResource.cache
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.csproj.CoreCompileInputs.cache
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.exe
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.pdb
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.MainForm.resources
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.ManagementControl.resources
