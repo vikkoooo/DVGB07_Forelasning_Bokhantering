@@ -34,6 +34,11 @@ namespace DVGB07_Bokhantering
 			ManagementControl management = new ManagementControl(bookListSource);
 			management.Dock = DockStyle.Fill;
 			managementTab.Controls.Add(management);
+			
+			LendingControl lending = new LendingControl(bookListSource);
+			lending.Dock = DockStyle.Fill;
+			lendingTab.Controls.Add(lending);
+			AcceptButton = lending.AddToCartButton; //enter button makes us press the add to cart button
 		}
 	}
 	

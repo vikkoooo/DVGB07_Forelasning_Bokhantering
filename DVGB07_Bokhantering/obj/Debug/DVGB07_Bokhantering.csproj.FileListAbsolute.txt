@@ -11,3 +11,4 @@ C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhanterin
 C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.MainForm.resources
 C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.ManagementControl.resources
 C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.AddBookForm.resources
+C:\Users\Viktor\RiderProjects\DVGB07_Forelasning_Bokhantering\DVGB07_Bokhantering\obj\Debug\DVGB07_Bokhantering.LendingControl.resources
