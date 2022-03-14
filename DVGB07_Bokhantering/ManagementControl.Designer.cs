@@ -32,27 +32,27 @@ namespace DVGB07_Bokhantering
 		private void InitializeComponent()
 		{
 			this.mainSplitContainer = new System.Windows.Forms.SplitContainer();
-			this.managementGridView = new System.Windows.Forms.DataGridView();
 			this.buttonSplitContainer = new System.Windows.Forms.SplitContainer();
 			this.addButton = new System.Windows.Forms.Button();
 			this.removeButton = new System.Windows.Forms.Button();
-			this.titleLabel = new System.Windows.Forms.Label();
-			this.authorLabel = new System.Windows.Forms.Label();
-			this.isbnLabel = new System.Windows.Forms.Label();
-			this.descriptionLabel = new System.Windows.Forms.Label();
-			this.titleTextBox = new System.Windows.Forms.TextBox();
-			this.authorTextBox = new System.Windows.Forms.TextBox();
-			this.isbnTextBox = new System.Windows.Forms.TextBox();
+			this.managementGridView = new System.Windows.Forms.DataGridView();
 			this.descriptionTextBox = new System.Windows.Forms.TextBox();
+			this.isbnTextBox = new System.Windows.Forms.TextBox();
+			this.authorTextBox = new System.Windows.Forms.TextBox();
+			this.titleTextBox = new System.Windows.Forms.TextBox();
+			this.descriptionLabel = new System.Windows.Forms.Label();
+			this.isbnLabel = new System.Windows.Forms.Label();
+			this.authorLabel = new System.Windows.Forms.Label();
+			this.titleLabel = new System.Windows.Forms.Label();
 			((System.ComponentModel.ISupportInitialize) (this.mainSplitContainer)).BeginInit();
 			this.mainSplitContainer.Panel1.SuspendLayout();
 			this.mainSplitContainer.Panel2.SuspendLayout();
 			this.mainSplitContainer.SuspendLayout();
-			((System.ComponentModel.ISupportInitialize) (this.managementGridView)).BeginInit();
 			((System.ComponentModel.ISupportInitialize) (this.buttonSplitContainer)).BeginInit();
 			this.buttonSplitContainer.Panel1.SuspendLayout();
 			this.buttonSplitContainer.Panel2.SuspendLayout();
 			this.buttonSplitContainer.SuspendLayout();
+			((System.ComponentModel.ISupportInitialize) (this.managementGridView)).BeginInit();
 			this.SuspendLayout();
 			// 
 			// mainSplitContainer
@@ -80,15 +80,6 @@ namespace DVGB07_Bokhantering
 			this.mainSplitContainer.Size = new System.Drawing.Size(531, 417);
 			this.mainSplitContainer.SplitterDistance = 191;
 			this.mainSplitContainer.TabIndex = 0;
-			// 
-			// managementGridView
-			// 
-			this.managementGridView.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-			this.managementGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-			this.managementGridView.Location = new System.Drawing.Point(3, 3);
-			this.managementGridView.Name = "managementGridView";
-			this.managementGridView.Size = new System.Drawing.Size(185, 352);
-			this.managementGridView.TabIndex = 0;
 			// 
 			// buttonSplitContainer
 			// 
@@ -128,32 +119,47 @@ namespace DVGB07_Bokhantering
 			this.removeButton.Text = "Remove Book";
 			this.removeButton.UseVisualStyleBackColor = true;
 			// 
-			// titleLabel
+			// managementGridView
 			// 
-			this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-			this.titleLabel.Location = new System.Drawing.Point(12, 12);
-			this.titleLabel.Name = "titleLabel";
-			this.titleLabel.Size = new System.Drawing.Size(100, 23);
-			this.titleLabel.TabIndex = 0;
-			this.titleLabel.Text = "Title";
+			this.managementGridView.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+			this.managementGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+			this.managementGridView.Location = new System.Drawing.Point(3, 3);
+			this.managementGridView.Name = "managementGridView";
+			this.managementGridView.Size = new System.Drawing.Size(185, 352);
+			this.managementGridView.TabIndex = 0;
 			// 
-			// authorLabel
+			// descriptionTextBox
 			// 
-			this.authorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-			this.authorLabel.Location = new System.Drawing.Point(12, 35);
-			this.authorLabel.Name = "authorLabel";
-			this.authorLabel.Size = new System.Drawing.Size(100, 23);
-			this.authorLabel.TabIndex = 0;
-			this.authorLabel.Text = "Author";
+			this.descriptionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles) ((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+			this.descriptionTextBox.Location = new System.Drawing.Point(12, 107);
+			this.descriptionTextBox.Multiline = true;
+			this.descriptionTextBox.Name = "descriptionTextBox";
+			this.descriptionTextBox.Size = new System.Drawing.Size(293, 248);
+			this.descriptionTextBox.TabIndex = 1;
 			// 
-			// isbnLabel
+			// isbnTextBox
 			// 
-			this.isbnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
-			this.isbnLabel.Location = new System.Drawing.Point(12, 58);
-			this.isbnLabel.Name = "isbnLabel";
-			this.isbnLabel.Size = new System.Drawing.Size(100, 23);
-			this.isbnLabel.TabIndex = 0;
-			this.isbnLabel.Text = "ISBN";
+			this.isbnTextBox.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+			this.isbnTextBox.Location = new System.Drawing.Point(118, 57);
+			this.isbnTextBox.Name = "isbnTextBox";
+			this.isbnTextBox.Size = new System.Drawing.Size(187, 20);
+			this.isbnTextBox.TabIndex = 1;
+			// 
+			// authorTextBox
+			// 
+			this.authorTextBox.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+			this.authorTextBox.Location = new System.Drawing.Point(118, 34);
+			this.authorTextBox.Name = "authorTextBox";
+			this.authorTextBox.Size = new System.Drawing.Size(187, 20);
+			this.authorTextBox.TabIndex = 1;
+			// 
+			// titleTextBox
+			// 
+			this.titleTextBox.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
+			this.titleTextBox.Location = new System.Drawing.Point(118, 11);
+			this.titleTextBox.Name = "titleTextBox";
+			this.titleTextBox.Size = new System.Drawing.Size(187, 20);
+			this.titleTextBox.TabIndex = 1;
 			// 
 			// descriptionLabel
 			// 
@@ -164,38 +170,32 @@ namespace DVGB07_Bokhantering
 			this.descriptionLabel.TabIndex = 0;
 			this.descriptionLabel.Text = "Description";
 			// 
-			// titleTextBox
+			// isbnLabel
 			// 
-			this.titleTextBox.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-			this.titleTextBox.Location = new System.Drawing.Point(118, 11);
-			this.titleTextBox.Name = "titleTextBox";
-			this.titleTextBox.Size = new System.Drawing.Size(187, 20);
-			this.titleTextBox.TabIndex = 1;
+			this.isbnLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+			this.isbnLabel.Location = new System.Drawing.Point(12, 58);
+			this.isbnLabel.Name = "isbnLabel";
+			this.isbnLabel.Size = new System.Drawing.Size(100, 23);
+			this.isbnLabel.TabIndex = 0;
+			this.isbnLabel.Text = "ISBN";
 			// 
-			// authorTextBox
+			// authorLabel
 			// 
-			this.authorTextBox.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-			this.authorTextBox.Location = new System.Drawing.Point(118, 34);
-			this.authorTextBox.Name = "authorTextBox";
-			this.authorTextBox.Size = new System.Drawing.Size(187, 20);
-			this.authorTextBox.TabIndex = 1;
+			this.authorLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+			this.authorLabel.Location = new System.Drawing.Point(12, 35);
+			this.authorLabel.Name = "authorLabel";
+			this.authorLabel.Size = new System.Drawing.Size(100, 23);
+			this.authorLabel.TabIndex = 0;
+			this.authorLabel.Text = "Author";
 			// 
-			// isbnTextBox
+			// titleLabel
 			// 
-			this.isbnTextBox.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-			this.isbnTextBox.Location = new System.Drawing.Point(118, 57);
-			this.isbnTextBox.Name = "isbnTextBox";
-			this.isbnTextBox.Size = new System.Drawing.Size(187, 20);
-			this.isbnTextBox.TabIndex = 1;
-			// 
-			// descriptionTextBox
-			// 
-			this.descriptionTextBox.Anchor = ((System.Windows.Forms.AnchorStyles) (((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) | System.Windows.Forms.AnchorStyles.Right)));
-			this.descriptionTextBox.Location = new System.Drawing.Point(12, 107);
-			this.descriptionTextBox.Multiline = true;
-			this.descriptionTextBox.Name = "descriptionTextBox";
-			this.descriptionTextBox.Size = new System.Drawing.Size(293, 248);
-			this.descriptionTextBox.TabIndex = 1;
+			this.titleLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte) (0)));
+			this.titleLabel.Location = new System.Drawing.Point(12, 12);
+			this.titleLabel.Name = "titleLabel";
+			this.titleLabel.Size = new System.Drawing.Size(100, 23);
+			this.titleLabel.TabIndex = 0;
+			this.titleLabel.Text = "Title";
 			// 
 			// ManagementControl
 			// 
@@ -211,11 +211,11 @@ namespace DVGB07_Bokhantering
 			this.mainSplitContainer.Panel2.PerformLayout();
 			((System.ComponentModel.ISupportInitialize) (this.mainSplitContainer)).EndInit();
 			this.mainSplitContainer.ResumeLayout(false);
-			((System.ComponentModel.ISupportInitialize) (this.managementGridView)).EndInit();
 			this.buttonSplitContainer.Panel1.ResumeLayout(false);
 			this.buttonSplitContainer.Panel2.ResumeLayout(false);
 			((System.ComponentModel.ISupportInitialize) (this.buttonSplitContainer)).EndInit();
 			this.buttonSplitContainer.ResumeLayout(false);
+			((System.ComponentModel.ISupportInitialize) (this.managementGridView)).EndInit();
 			this.ResumeLayout(false);
 		}
 
