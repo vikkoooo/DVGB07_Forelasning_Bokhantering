@@ -8,11 +8,13 @@ namespace DVGB07_Bokhantering
 	{
 		public Button AddToCartButton { get { return addToCartButton; } }
 		private BindingSource bookListSource;
+		private Library myLibrary;
 		
-		public LendingControl(BindingSource bookListSource)
+		public LendingControl(Library myLibrary, BindingSource bookListSource)
 		{
 			InitializeComponent();
 			this.bookListSource = bookListSource;
+			this.myLibrary = myLibrary;
 			bookListDataGridView.DataSource = this.bookListSource;
 
 		}
@@ -62,6 +64,8 @@ namespace DVGB07_Bokhantering
 			cartListBox.Items.Clear();
 			isbnTextBox.Text = String.Empty;
 			isbnTextBox.Focus();
+			myLibrary.SaveFile();
+
 		}
 
 		private void radioLend_CheckedChanged(object sender, EventArgs e)

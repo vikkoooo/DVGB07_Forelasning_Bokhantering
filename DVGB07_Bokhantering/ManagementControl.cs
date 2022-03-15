@@ -9,13 +9,16 @@ namespace DVGB07_Bokhantering
 		
 		private BindingSource bookListSource;
 		private Book selectedItem;
-		
-		public ManagementControl(BindingSource bookListSource)
+		private Library myLibrary;
+
+		public ManagementControl(Library myLibrary, BindingSource bookListSource)
 		{
 			InitializeComponent();
 			
 			// gets the list from the main form
 			this.bookListSource = bookListSource;
+			this.myLibrary = myLibrary;
+			
 			bookDataGridView.DataSource = this.bookListSource;
 		}
 
@@ -81,8 +84,12 @@ namespace DVGB07_Bokhantering
 			// update ui
 			bookListSource.ResetCurrentItem();
 			
-			saveButton.Enabled = false;
-			cancelButton.Enabled = false;
+			// saveButton.Enabled = false;
+			// cancelButton.Enabled = false;
+			bookDataGridView_SelectionChanged(sender, null);
+			myLibrary.SaveFile();
+
+
 		}
 
 		private void removeButton_Click(object sender, EventArgs e)
@@ -104,6 +111,7 @@ namespace DVGB07_Bokhantering
 			saveButton.Enabled = false;
 			cancelButton.Enabled = false;
 			bookDataGridView_SelectionChanged(sender, null);
+			myLibrary.SaveFile();
 		}
 
 		private void SetTextEnabled(bool state)
@@ -122,6 +130,7 @@ namespace DVGB07_Bokhantering
 			if (addBookForm.ShowDialog() == DialogResult.OK)
 			{
 				bookListSource.Add(addBookForm.Book);
+				myLibrary.SaveFile();
 			}
 			else
 			{

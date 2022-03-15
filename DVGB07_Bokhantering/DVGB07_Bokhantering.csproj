@@ -59,6 +59,7 @@
         <Compile Include="LendingControl.Designer.cs">
           <DependentUpon>LendingControl.cs</DependentUpon>
         </Compile>
+        <Compile Include="Library.cs" />
         <Compile Include="MainForm.cs">
             <SubType>Form</SubType>
         </Compile>

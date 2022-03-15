@@ -12,30 +12,26 @@ namespace DVGB07_Bokhantering
 {
 	public partial class MainForm : Form
 	{
-		private BindingList<Book> bookList;
+		private Library myLibrary;
 		private BindingSource bookListSource;
 		
 		public MainForm()
 		{
 			InitializeComponent();
-			bookList = new BindingList<Book>()
-			{
-				new Book() { Title = "Linear Algebra", Author = "Poole", ISBN = "123", Description = "" },
-				new Book() { Title = "The Invisible Computer", Author = "Donald Norman", ISBN = "234", Description = "" },
-				new Book() { Title = "Datorsystem", Author = "Mats Brorsson", ISBN = "345", Description = "" }
-			};
 			bookListSource = new BindingSource();
-			bookListSource.DataSource = bookList;
+			myLibrary = new Library();
+			myLibrary.LoadFile();
+			bookListSource.DataSource = myLibrary.BookList;
 		}
 		
 		private void MainForm_Load(object sender, EventArgs e)
 		{
 			// Add controller to Management tab on startup
-			ManagementControl management = new ManagementControl(bookListSource);
+			ManagementControl management = new ManagementControl(myLibrary, bookListSource);
 			management.Dock = DockStyle.Fill;
 			managementTab.Controls.Add(management);
 			
-			LendingControl lending = new LendingControl(bookListSource);
+			LendingControl lending = new LendingControl(myLibrary, bookListSource);
 			lending.Dock = DockStyle.Fill;
 			lendingTab.Controls.Add(lending);
 			AcceptButton = lending.AddToCartButton; //enter button makes us press the add to cart button
